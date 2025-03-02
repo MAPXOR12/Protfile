@@ -655,17 +655,52 @@
 
 
 
-    <footer>
-        <div class="container">
-            <div class="social-links">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-dribbble"></i></a>
-            </div>
-            <p>&copy; 2024 Developers Support. All rights reserved.</p>
+ <footer>
+    <div class="container">
+        <!-- Language Switcher -->
+        <div class="language-switcher">
+            <label for="language-select">Language:</label>
+            <select id="language-select">
+                <option value="en" selected>English</option>
+                <option value="ku">Kurdish</option>
+            </select>
         </div>
-    </footer>
+
+        <!-- Ads This Up -->
+        <div id="ads-container">
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : 'c27a45e1425f90923c936a0ff707ad8d',
+                    'format' : 'iframe',
+                    'height' : 90,
+                    'width' : 728,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//www.highperformanceformat.com/c27a45e1425f90923c936a0ff707ad8d/invoke.js"></script>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links">
+            <a href="https://github.com/MAPXOR12"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/kurdisupport?s=21"><i class="fab fa-twitter"></i></a>
+            <a href="https://discordapp.com/users/742842055197327520"><i class="fab fa-discord"></i></a>
+        </div>
+        
+        <p>&copy; 2024 Developers Support. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById("language-select").addEventListener("change", function() {
+        const selectedLang = this.value;
+        if (selectedLang === "ku") {
+            alert("Kurdish language selected! (Translation feature to be implemented)");
+        } else {
+            alert("English language selected!");
+        }
+    });
+</script>
 
     <script>
         // Header scroll effect
